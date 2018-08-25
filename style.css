@@ -60,3 +60,13 @@ p {
     color: #daf6ff;
     font-size: 25pt;
 }
+
+#temp {
+    width: 20mm;
+    position: relative;
+    bottom: 10mm;
+    left: 353mm;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    font-size: 40pt;
+}
