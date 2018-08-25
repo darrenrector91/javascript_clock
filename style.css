@@ -61,12 +61,38 @@ p {
     font-size: 25pt;
 }
 
+.temp-city {
+    font-family: 'Share Tech Mono', monospace;
+    border-left: 1px solid #daf6ff;
+    border-bottom: 1px solid #daf6ff;
+    position: relative;
+    left: 333mm;
+    bottom: 22mm;
+    height: 40mm;
+    width: 48mm;
+    z-index: 9999;
+    box-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+}
+
 #temp {
     width: 20mm;
     position: relative;
-    bottom: 10mm;
-    left: 353mm;
+    top: 9mm;
+    left: 26mm;
     transform: translate(-50%, -50%);
     color: #daf6ff;
-    font-size: 40pt;
+    font-size: 32pt;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+
+#city {
+    width: 50mm;
+    position: relative;
+    top: 8mm;
+    left: 32mm;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    font-size: 20pt;
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+
 }

@@ -48,10 +48,10 @@ var long;
         let lat = (position.coords.latitude).toString();
         let long = (position.coords.longitude).toString();
         let coordinates = (lat + "," + " " + long);
-        console.log(coordinates);
+        // console.log(coordinates);
         
-        document.getElementById("coords").innerHTML = 
-            "Latitude: " + lat + "<br>Longitude: " + long;
+        // document.getElementById("coords").innerHTML = 
+        //     "Latitude: " + lat + "<br>Longitude: " + long;
 
         // return coordinates;
     
@@ -69,6 +69,7 @@ var long;
             console.log(weatherType);
             
             document.getElementById("temp").innerHTML = (fTemp + "˚");
+            document.getElementById("city").innerHTML = city;
 
         });
 
