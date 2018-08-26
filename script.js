@@ -62,14 +62,19 @@ var long;
             var weatherType = data.weather[0].description;
             var kTemp = data.main.temp;
             var city = data.name;
+            var id = data.weather[0].id;
+            // var icon = "/images/codes/" + (data.weather[0].id + ".png");
 
             fTemp = (kTemp * (9 / 5) - 459.67).toFixed(0);
             console.log(fTemp + "˚");
             console.log(city);
             console.log(weatherType);
+            console.log(id);
+            
             
             document.getElementById("temp").innerHTML = (fTemp + "˚");
             document.getElementById("city").innerHTML = city;
+            // document.getElementById("icon").innerHTML = icon;
 
         });
 
