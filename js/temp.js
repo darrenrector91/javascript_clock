@@ -1,5 +1,3 @@
-var lat;
-var long;
 
     function startTime() {
         var d = new Date();
@@ -47,35 +45,20 @@ var long;
 
         let lat = (position.coords.latitude).toString();
         let long = (position.coords.longitude).toString();
-        let coordinates = (lat + "," + " " + long);
-        // console.log(coordinates);
-        
-        // document.getElementById("coords").innerHTML = 
-        //     "Latitude: " + lat + "<br>Longitude: " + long;
-
-        // return coordinates;
     
         var api = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&APPID=749da4002db4023d33f77723c728f9ec"
         var fTemp;
 
         $.getJSON(api, function(data) {
-            var weatherType = data.weather[0].description;
             var kTemp = data.main.temp;
             var city = data.name;
-            var id = data.weather[0].id;
-            // var icon = "/images/codes/" + (data.weather[0].id + ".png");
 
             fTemp = (kTemp * (9 / 5) - 459.67).toFixed(0);
-            console.log(fTemp + "˚");
-            console.log(city);
-            console.log(weatherType);
-            console.log(id);
-            
-            
+        
             document.getElementById("temp").innerHTML = (fTemp + "˚");
             document.getElementById("city").innerHTML = city;
-            // document.getElementById("icon").innerHTML = icon;
-
         });
 
+        
     }
+    

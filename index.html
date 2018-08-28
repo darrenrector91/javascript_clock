@@ -4,26 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Darren Home Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/accordian.css">
      <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="script.js"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
 </head>
 <body onload="startTime();getLocation()">
     <div id="clock">
         <p id="date"></p>
         <p id="time"></p>
     </div>
-    <!-- <div id="calendar">
-        <div class="cal-box"></div>
-    </div> -->
-    <p id="coords"></p>
     <div class="temp-city">
         <p id="temp"></p>
         <p id="city"></p>
-        <p id="icon"></p>
+    </div>
+    <section class="news-listing"></section>
+    <div id="social-media">
+        <a href="https://github.com/darrenrector91"><img class="social-icon" src="images/social-media/github.png" alt="github-icon" srcset=""></a>
+        <a href="https://twitter.com/mplscoder"><img class="social-icon" src="images/social-media/twitter.png" alt="twitter-icon" srcset="">
+        </a>
+        <a href="https://www.facebook.com/darrenrector91?ref=bookmarks"><img class="social-icon" src="images/social-media/facebook.png" alt="facebook-icon" srcset="">
+        </a>
+        <a href="https://www.youtube.com/channel/UCW6YONCHfAijdzmuqDyXrWA?view_as=subscriber"><img class="social-icon" src="images/social-media/youtube.png" alt="youtube-icon" srcset="">
+        </a>
+        <a href="https://www.linkedin.com/in/darrenrector/"><img class="social-icon" src="images/social-media/linkedin.png" alt="linkedin-icon" srcset="">
+        </a>
+    </div>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Movies</p>
     </div>
 </body>
+<script src="js/temp.js"></script>
+<script src="js/news.js"></script>
 </html>
